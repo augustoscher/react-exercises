@@ -1,12 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import ReactDOM from 'react-dom'
+import React from 'react'
+import FirstComponent from './components/FirstComponent'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const element = document.getElementById('root');
+// ReactDOM.render('Hello React', element)
+//JSX Code
+// ReactDOM.render(<h1>Hello React</h1>, element)
+// const jsx2 = <ul><li>Opção 1</li><li>Opção 2</li></ul>
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(
+    <div>
+        <FirstComponent></FirstComponent>
+    </div>
+    , element)
