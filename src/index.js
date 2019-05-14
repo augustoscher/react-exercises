@@ -1,6 +1,8 @@
 import ReactDOM from 'react-dom'
 import React from 'react'
 import FirstComponent from './components/FirstComponent'
+import {CompA, CompB} from './components/TwoComponents'
+// import {MultiElements} from './components/MultiElements'
 
 const element = document.getElementById('root');
 // ReactDOM.render('Hello React', element)
@@ -10,6 +12,9 @@ const element = document.getElementById('root');
 
 ReactDOM.render(
     <div>
-        <FirstComponent></FirstComponent>
+        <FirstComponent name="This is a Name" lastName="This is LastName"/>
+        <CompA value="i'm component A"/>
+        <CompB value="i'm component B"/>
+        {/* <MultiElements/> */}
     </div>
     , element)
