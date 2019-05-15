@@ -12,6 +12,6 @@ import React from 'react'
 
 export default (props) => 
     <div>
-        <h1>{props.name}</h1>
-        <h2>{props.lastName}</h2>
+        <p>{props.name}</p>
+        <p>{props.lastName}</p>
     </div>
