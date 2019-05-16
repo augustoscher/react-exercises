@@ -6,6 +6,7 @@ import React from 'react'
 import SomeFamily from './components/SomeFamily'
 import Family from './components/Family'
 import Member from './components/Member'
+import FunctionalComponent from './components/FunctionalComponent'
 
 const element = document.getElementById('root');
 // ReactDOM.render('Hello React', element)
@@ -27,5 +28,6 @@ ReactDOM.render(
         <Member name="Father"/>
         <Member name="Son"/>
       </SomeFamily>
+      <FunctionalComponent/>
     </div>
     , element)
