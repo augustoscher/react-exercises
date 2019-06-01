@@ -10,6 +10,7 @@ import React from 'react'
 // import Father from './components/Father'
 // import ComponentClass from './components/ComponentClass'
 import Counter from './components/Counter'
+import HookCounter from './components/HookCounter';
 
 const element = document.getElementById('root');
 // ReactDOM.render('Hello React', element)
@@ -18,16 +19,18 @@ const element = document.getElementById('root');
 // const jsx2 = <ul><li>Opção 1</li><li>Opção 2</li></ul>
 
 ReactDOM.render(
-    <div>
-      <Counter number={10}/>
-      {/* <ComponentClass param="i'm a param"/> */}
-      {/* <ComponentClass/> */}
-      {/* <FirstComponent name="This is a Name" lastName="This is LastName"/> */}
-      {/* <CompA value="i'm component A"/> */}
-      {/* <CompB value="i'm component B"/> */}
-      {/* <MultiElements/> */}
-     
-      {/* <Family>
+  <div>
+    <Counter number={10} />
+    <br />
+    <HookCounter />
+    {/* <ComponentClass param="i'm a param"/> */}
+    {/* <ComponentClass/> */}
+    {/* <FirstComponent name="This is a Name" lastName="This is LastName"/> */}
+    {/* <CompA value="i'm component A"/> */}
+    {/* <CompB value="i'm component B"/> */}
+    {/* <MultiElements/> */}
+
+    {/* <Family>
         <Member name="Father" lastName="MyLastname"/>
         <Member name="Mother" lastName="MyLastname"/>
       </Family>
@@ -37,5 +40,5 @@ ReactDOM.render(
       </SomeFamily>
       <FunctionalComponent/>
       <Father/>  */}
-    </div>
-    , element)
+  </div >
+  , element)
