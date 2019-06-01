@@ -3,12 +3,13 @@ import React from 'react'
 // import FirstComponent from './components/FirstComponent'
 // import {CompA, CompB} from './components/TwoComponents'
 // import MultiElements from './components/MultiElements'
-import SomeFamily from './components/SomeFamily'
-import Family from './components/Family'
-import Member from './components/Member'
-import FunctionalComponent from './components/FunctionalComponent'
-import Father from './components/Father'
-import ComponentClass from './components/ComponentClass'
+// import SomeFamily from './components/SomeFamily'
+// import Family from './components/Family'
+// import Member from './components/Member'
+// import FunctionalComponent from './components/FunctionalComponent'
+// import Father from './components/Father'
+// import ComponentClass from './components/ComponentClass'
+import Counter from './components/Counter'
 
 const element = document.getElementById('root');
 // ReactDOM.render('Hello React', element)
@@ -18,13 +19,15 @@ const element = document.getElementById('root');
 
 ReactDOM.render(
     <div>
-      <ComponentClass param="i'm a param"/>
-      <ComponentClass/>
+      <Counter number={10}/>
+      {/* <ComponentClass param="i'm a param"/> */}
+      {/* <ComponentClass/> */}
       {/* <FirstComponent name="This is a Name" lastName="This is LastName"/> */}
       {/* <CompA value="i'm component A"/> */}
       {/* <CompB value="i'm component B"/> */}
       {/* <MultiElements/> */}
-      <Family>
+     
+      {/* <Family>
         <Member name="Father" lastName="MyLastname"/>
         <Member name="Mother" lastName="MyLastname"/>
       </Family>
@@ -33,6 +36,6 @@ ReactDOM.render(
         <Member name="Son"/>
       </SomeFamily>
       <FunctionalComponent/>
-      <Father/> 
+      <Father/>  */}
     </div>
     , element)
