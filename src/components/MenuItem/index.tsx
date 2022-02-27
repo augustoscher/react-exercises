@@ -1,12 +1,7 @@
-
 type MenuItemProps = {
   label: string
 }
 
-const MenuItem = ({ label }: MenuItemProps) => (
-  <>
-  {label}
-  </>
-)
+const MenuItem = ({ label }: MenuItemProps) => <>{label}</>
 
-export default MenuItem;
+export default MenuItem
