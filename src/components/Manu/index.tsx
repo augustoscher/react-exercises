@@ -6,8 +6,12 @@ type MenuProps = {
 
 const Menu = ({ items }: MenuProps) => (
   <ul>
-    {items.map((item, idx) => <li key={idx}><MenuItem label={item} /></li>)}
+    {items.map((item, idx) => (
+      <li key={idx}>
+        <MenuItem label={item} />
+      </li>
+    ))}
   </ul>
 )
 
-export default Menu;
+export default Menu
