@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
+import * as S from './styles'
+
 type Item = {
   objectID: string
   url: string
@@ -38,12 +40,15 @@ const FetchItems = () => {
   }, [query])
 
   return (
-    <>
-      <input
-        type="text"
-        value={query}
-        onChange={(event) => setQuery(event.target.value)}
-      />
+    <S.Wrapper>
+      <div>
+        <span>Search: </span>
+        <input
+          type="text"
+          value={query}
+          onChange={(event) => setQuery(event.target.value)}
+        />
+      </div>
 
       {isError && <div>Something went wrong ...</div>}
 
@@ -58,7 +63,7 @@ const FetchItems = () => {
           ))}
         </ul>
       )}
-    </>
+    </S.Wrapper>
   )
 }
 
