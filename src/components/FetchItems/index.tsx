@@ -19,7 +19,6 @@ const FetchItems = () => {
       const { data } = await axios.get<Data>(
         'https://hn.algolia.com/api/v1/search?query=redux'
       )
-      console.log('ffsdifjo')
       setItems(data.hits)
     }
 
