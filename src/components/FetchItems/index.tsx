@@ -11,7 +11,7 @@ type Data = {
   hits: Item[]
 }
 
-const FetchPokemon = () => {
+const FetchItems = () => {
   const [items, setItems] = useState<Item[]>([])
 
   useEffect(() => {
@@ -37,4 +37,4 @@ const FetchPokemon = () => {
   )
 }
 
-export default FetchPokemon
+export default FetchItems

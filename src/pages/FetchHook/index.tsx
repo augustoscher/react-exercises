@@ -1,6 +1,6 @@
 import Base from 'templates/Base'
 import ExampleDescription from 'components/ExampleDescription'
-import FetchPokemon from 'components/FetchPokemon'
+import FetchItems from 'components/FetchItems'
 
 const FetchHook = () => (
   <Base>
@@ -13,7 +13,7 @@ const FetchHook = () => (
 
     <hr />
 
-    <FetchPokemon />
+    <FetchItems />
   </Base>
 )
 
