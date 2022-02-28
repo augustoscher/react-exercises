@@ -9,8 +9,9 @@ export const Wrapper = styled.div`
 `
 
 export const Content = styled.div`
-  width: 90%
-  margin: 3.2rem auto 0 auto;
+  /* width: 90%
+  margin: 3.2rem auto 0 auto; */
+  padding: 1.6rem;
   flex: 1 0 auto;
 `
 
