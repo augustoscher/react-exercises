@@ -2,6 +2,8 @@ import { useReducer } from 'react'
 import { HANDLE_INPUT_FIELD, TOGGLE_CONSENT } from './actionTypes'
 import formReducer, { initialState } from './formReducer'
 
+import * as S from './styles'
+
 const FormWithReducer = () => {
   const [state, dispatch] = useReducer(formReducer, initialState)
 
@@ -15,44 +17,38 @@ const FormWithReducer = () => {
   }
 
   return (
-    <form>
-      <label>
-        Username:
+    <S.Wrapper>
+      <S.FormWrapper>
+        <label htmlFor="username">Username:</label>
         <input
           type="text"
           name="username"
           value={state.username}
           onChange={handleInputChange}
         />
-      </label>
-      <label>
-        Email:
+        <label htmlFor="email">Email:</label>
         <input
           type="email"
           name="email"
           value={state.email}
           onChange={handleInputChange}
         />
-      </label>
-      <label>
-        Password:
+        <label htmlFor="password">Password:</label>
         <input
           type="password"
           name="password"
           value={state.password}
           onChange={handleInputChange}
         />
-      </label>
-      <label>
-        Consent terms of conditions:
+        <label htmlFor="termsOfCondition">Consent terms of conditions:</label>
         <input
           type="checkbox"
           name="termsOfCondition"
           checked={state.hasConsented}
           onChange={() => dispatch({ type: TOGGLE_CONSENT })}
         />
-      </label>
-    </form>
+      </S.FormWrapper>
+    </S.Wrapper>
   )
 }
 
