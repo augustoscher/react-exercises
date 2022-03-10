@@ -1,5 +1,6 @@
 import Base from 'templates/Base'
 import ExampleDescription from 'components/ExampleDescription'
+import FormWithReducer from 'components/FormWithReducer'
 
 const ReducerHook = () => (
   <Base>
@@ -11,6 +12,8 @@ const ReducerHook = () => (
     />
 
     <hr />
+
+    <FormWithReducer />
   </Base>
 )
 
