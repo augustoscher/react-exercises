@@ -5,6 +5,7 @@ import Home from 'pages/Home'
 import FetchHook from 'pages/FetchHook'
 import CustomHook from 'pages/CustomHook'
 import ReducerHook from 'pages/ReducerHook'
+import ToggleCustomHook from 'pages/ToggleCustomHook'
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
           items={[
             { label: 'Fetch with hooks', path: 'fetch-hook' },
             { label: 'Custom hook', path: 'custom-hook' },
-            { label: 'UseReducer hook', path: 'use-reducer-hook' }
+            { label: 'UseReducer hook', path: 'use-reducer-hook' },
+            { label: 'UseToggle hook', path: 'use-toggle-custom-hook' }
           ]}
         />
 
@@ -25,6 +27,7 @@ function App() {
           <Route path="fetch-hook" element={<FetchHook />} />
           <Route path="custom-hook" element={<CustomHook />} />
           <Route path="use-reducer-hook" element={<ReducerHook />} />
+          <Route path="use-toggle-custom-hook" element={<ToggleCustomHook />} />
         </Routes>
       </BrowserRouter>
     </>
