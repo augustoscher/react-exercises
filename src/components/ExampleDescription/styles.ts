@@ -7,3 +7,7 @@ export const Wrapper = styled.div`
 export const Title = styled.h1`
   margin: 0;
 `
+
+export const LinkWrapper = styled.div`
+  margin: 16px 0;
+`

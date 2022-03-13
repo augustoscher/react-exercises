@@ -18,10 +18,17 @@ const ExampleDescription = ({
   <S.Wrapper>
     <S.Title>{title}</S.Title>
     <p>{description}</p>
-    {tags.map((item, idx) => (
-      <Badge key={idx} text={item} />
-    ))}
-    {!!link && <a href={link}>See post</a>}
+    <div>
+      {tags.map((item, idx) => (
+        <Badge key={idx} text={item} />
+      ))}
+    </div>
+
+    {!!link && (
+      <S.LinkWrapper>
+        <a href={link}>See post</a>
+      </S.LinkWrapper>
+    )}
   </S.Wrapper>
 )
 
