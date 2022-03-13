@@ -1,10 +1,7 @@
 import styled from 'styled-components'
-import media from 'styled-media-query'
 
-export const Wrapper = styled.main`
-  ${media.greaterThan('medium')`
-    box-shadow: 0 0.4rem 0.5rem 0 rgba(0, 0, 0, 0.2);
-  `}
+export const Wrapper = styled.nav`
+  padding: 1.6rem;
 `
 
 export const List = styled.ul`

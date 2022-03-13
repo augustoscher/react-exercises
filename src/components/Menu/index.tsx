@@ -7,15 +7,15 @@ type MenuProps = {
 }
 
 const Menu = ({ items }: MenuProps) => (
-  <S.List>
-    <nav>
+  <S.Wrapper>
+    <S.List>
       {items.map((item, idx) => (
         <li key={idx}>
           <MenuItem {...item} />
         </li>
       ))}
-    </nav>
-  </S.List>
+    </S.List>
+  </S.Wrapper>
 )
 
 export default Menu
