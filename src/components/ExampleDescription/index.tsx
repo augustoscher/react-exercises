@@ -1,3 +1,5 @@
+import Badge from 'components/Badge'
+
 import * as S from './styles'
 
 type ExampleDescriptionProps = {
@@ -16,11 +18,9 @@ const ExampleDescription = ({
   <S.Wrapper>
     <S.Title>{title}</S.Title>
     <p>{description}</p>
-    <ul>
-      {tags.map((item, idx) => (
-        <li key={idx}>{item}</li>
-      ))}
-    </ul>
+    {tags.map((item, idx) => (
+      <Badge key={idx} text={item} />
+    ))}
     {!!link && <a href={link}>See post</a>}
   </S.Wrapper>
 )
