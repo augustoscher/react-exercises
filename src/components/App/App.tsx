@@ -7,6 +7,7 @@ import CustomHook from 'pages/CustomHook'
 import ReducerHook from 'pages/ReducerHook'
 import ToggleCustomHook from 'pages/ToggleCustomHook'
 import UseRef from 'pages/UseRef'
+import UseMemo from 'pages/UseMemo'
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
             { label: 'Custom hook', path: 'custom-hook' },
             { label: 'UseReducer hook', path: 'use-reducer-hook' },
             { label: 'UseToggle hook', path: 'use-toggle-custom-hook' },
-            { label: 'UseRef hook', path: 'use-ref' }
+            { label: 'UseRef hook', path: 'use-ref' },
+            { label: 'UseMemo hook', path: 'use-memo' }
           ]}
         />
 
@@ -31,6 +33,7 @@ function App() {
           <Route path="use-reducer-hook" element={<ReducerHook />} />
           <Route path="use-toggle-custom-hook" element={<ToggleCustomHook />} />
           <Route path="use-ref" element={<UseRef />} />
+          <Route path="use-memo" element={<UseMemo />} />
         </Routes>
       </BrowserRouter>
     </>
