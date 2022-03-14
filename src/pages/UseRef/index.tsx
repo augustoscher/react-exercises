@@ -1,6 +1,7 @@
 import Base from 'templates/Base'
 import ExampleDescription from 'components/ExampleDescription'
 import AccessDomUseRef from 'components/AccessDomUseRef'
+import MutableUseRef from 'components/MutableUseRef'
 
 const UseRef = () => (
   <Base>
@@ -13,6 +14,7 @@ const UseRef = () => (
     <hr />
 
     <AccessDomUseRef />
+    <MutableUseRef />
   </Base>
 )
 
