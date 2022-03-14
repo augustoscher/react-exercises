@@ -1,18 +1,18 @@
 import Base from 'templates/Base'
 import ExampleDescription from 'components/ExampleDescription'
-import UseRefExample from 'components/UseRefExample'
+import AccessDomUseRef from 'components/AccessDomUseRef'
 
 const UseRef = () => (
   <Base>
     <ExampleDescription
-      title="Component useRef hook example"
+      title="The useRef hook could be used to access a DOM element, like this example"
       description="Using useRef example"
       tags={['useRef', 'hooks']}
     />
 
     <hr />
 
-    <UseRefExample />
+    <AccessDomUseRef />
   </Base>
 )
 
