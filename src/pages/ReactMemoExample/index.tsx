@@ -1,5 +1,6 @@
 import Base from 'templates/Base'
 import ExampleDescription from 'components/ExampleDescription'
+import CountUpdater from 'components/CountUpdater'
 
 const ReactMemoExample = () => (
   <Base>
@@ -11,6 +12,8 @@ const ReactMemoExample = () => (
     />
 
     <hr />
+
+    <CountUpdater />
   </Base>
 )
 
