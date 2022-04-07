@@ -9,6 +9,7 @@ import ToggleCustomHook from 'pages/ToggleCustomHook'
 import UseRef from 'pages/UseRef'
 import UseMemo from 'pages/UseMemo'
 import UseResizePage from 'pages/UseResize'
+import ReactMemoExample from 'pages/ReactMemoExample'
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
             { label: 'UseToggle hook', path: 'use-toggle-custom-hook' },
             { label: 'UseRef hook', path: 'use-ref' },
             { label: 'UseMemo hook', path: 'use-memo' },
-            { label: 'UseResize custom hook', path: 'use-resize' }
+            { label: 'UseResize custom hook', path: 'use-resize' },
+            { label: 'React.memo()', path: 'react-memoization' }
           ]}
         />
 
@@ -37,6 +39,7 @@ function App() {
           <Route path="use-ref" element={<UseRef />} />
           <Route path="use-memo" element={<UseMemo />} />
           <Route path="use-resize" element={<UseResizePage />} />
+          <Route path="react-memoization" element={<ReactMemoExample />} />
         </Routes>
       </BrowserRouter>
     </>
