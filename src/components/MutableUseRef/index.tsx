@@ -8,6 +8,7 @@ const MutableUseRef = () => {
   const onButtonClick = () => {
     // because inputEl can be null!
     if (inputEl && inputEl.current) {
+      inputEl.current.value = '100'
       inputEl.current.focus()
     }
   }
