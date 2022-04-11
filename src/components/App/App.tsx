@@ -10,6 +10,7 @@ import UseRef from 'pages/UseRef'
 import UseMemo from 'pages/UseMemo'
 import UseResizePage from 'pages/UseResize'
 import ReactMemoExample from 'pages/ReactMemoExample'
+import ReactLazyExample from 'pages/ReactLazyExample'
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
             { label: 'UseRef hook', path: 'use-ref' },
             { label: 'UseMemo hook', path: 'use-memo' },
             { label: 'UseResize custom hook', path: 'use-resize' },
-            { label: 'React.memo()', path: 'react-memoization' }
+            { label: 'React.memo()', path: 'react-memoization' },
+            { label: 'React.lazy()', path: 'react-lazy' }
           ]}
         />
 
@@ -40,6 +42,7 @@ function App() {
           <Route path="use-memo" element={<UseMemo />} />
           <Route path="use-resize" element={<UseResizePage />} />
           <Route path="react-memoization" element={<ReactMemoExample />} />
+          <Route path="react-lazy" element={<ReactLazyExample />} />
         </Routes>
       </BrowserRouter>
     </>
