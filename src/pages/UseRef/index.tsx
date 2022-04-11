@@ -2,7 +2,7 @@ import Base from 'templates/Base'
 import ExampleDescription from 'components/ExampleDescription'
 import AccessDomUseRef from 'components/AccessDomUseRef'
 import MutableUseRef from 'components/MutableUseRef'
-import CounterUseRef from 'components/CounterUseRef'
+import CounterUseRef, { MutateCounter } from 'components/CounterUseRef'
 
 import * as S from './styles'
 
@@ -24,6 +24,8 @@ const UseRef = () => (
 
     <CounterUseRef />
     <S.Divider />
+
+    <MutateCounter />
   </Base>
 )
 

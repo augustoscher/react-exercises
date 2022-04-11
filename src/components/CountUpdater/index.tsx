@@ -27,12 +27,11 @@ const CountUpdater = () => {
 
   useEffect(() => {
     setInterval(() => {
-      console.log('===')
       console.log('1. Run interval')
       // Update state variable `counter` every 2 seconds.
       // trigger a re-render. Re-render child components as well.
       test += 1
-      setCounter(test)
+      setCounter(test) // just to force component re render
     }, 2000)
   }, [])
 
