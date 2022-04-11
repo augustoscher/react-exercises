@@ -21,7 +21,7 @@ const AccessDomUseRef = () => {
 
   return (
     <div
-      style={{ marginBottom: '8px', border: '1px black dashed' }}
+      style={{ marginBottom: '8px', border: '1px black solid' }}
       ref={divRef}
     >
       etc
