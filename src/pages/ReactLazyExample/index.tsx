@@ -1,5 +1,6 @@
 import Base from 'templates/Base'
 import ExampleDescription from 'components/ExampleDescription'
+import LazyExample from 'components/LazyExample'
 
 const ReactLazyExample = () => (
   <Base>
@@ -11,6 +12,8 @@ const ReactLazyExample = () => (
     />
 
     <hr />
+
+    <LazyExample />
   </Base>
 )
 
