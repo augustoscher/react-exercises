@@ -33,7 +33,7 @@ const LazyExample = () => {
           <S.GridItems>
             <p>Loaded component: </p>
             {load && (
-              <Suspense fallback={<div>Loading....</div>}>
+              <Suspense fallback={<Loader />}>
                 <Hash />
               </Suspense>
             )}
