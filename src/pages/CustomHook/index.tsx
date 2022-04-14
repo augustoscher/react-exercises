@@ -8,7 +8,7 @@ const CustomHook = () => (
       title="Generic Custom Hook to fetch data"
       description="Using generic custom hook to fetch data from APIs"
       tags={['useState', 'useEffect', 'custom hooks', 'fetch']}
-      link="https://www.robinwieruch.de/react-hooks-fetch-data/"
+      links={['https://www.robinwieruch.de/react-hooks-fetch-data/']}
     />
 
     <hr />

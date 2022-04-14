@@ -8,7 +8,9 @@ const ReactMemoExample = () => (
       title="Prevent re-renders on React functional components with React.memo()"
       description="memoization"
       tags={['React.memo()']}
-      link="https://linguinecode.com/post/prevent-re-renders-react-functional-components-react-memo"
+      links={[
+        'https://linguinecode.com/post/prevent-re-renders-react-functional-components-react-memo'
+      ]}
     />
 
     <hr />

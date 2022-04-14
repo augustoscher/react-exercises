@@ -8,7 +8,7 @@ const ReducerHook = () => (
       title="useReducer hook example"
       description="Use reducer hooks"
       tags={['useReducer']}
-      link="https://www.robinwieruch.de/react-hooks-fetch-data/"
+      links={['https://www.robinwieruch.de/react-hooks-fetch-data/']}
     />
 
     <hr />

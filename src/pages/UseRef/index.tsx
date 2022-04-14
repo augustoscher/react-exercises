@@ -12,7 +12,7 @@ const UseRef = () => (
       title="The useRef hook could be used to access a DOM element, like this example"
       description="Using useRef example"
       tags={['useRef', 'hooks']}
-      link="https://fettblog.eu/typescript-react/hooks/#useref"
+      links={['https://fettblog.eu/typescript-react/hooks/#useref']}
     />
     <S.Divider />
 

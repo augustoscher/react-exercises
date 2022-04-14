@@ -6,13 +6,13 @@ type ExampleDescriptionProps = {
   title: string
   description: string
   tags: string[]
-  link?: string
+  links?: string[]
 }
 
 const ExampleDescription = ({
   title,
   description,
-  link,
+  links = [],
   tags
 }: ExampleDescriptionProps) => (
   <S.Wrapper>
@@ -24,11 +24,14 @@ const ExampleDescription = ({
       ))}
     </div>
 
-    {!!link && (
-      <S.LinkWrapper>
-        <a href={link}>See post</a>
-      </S.LinkWrapper>
-    )}
+    {links.length > 0 &&
+      links.map((item, idx) => (
+        <S.LinkWrapper key={idx}>
+          <a href={item} target="_blank" rel="noopener noreferrer">{`See Post ${
+            idx + 1
+          }`}</a>
+        </S.LinkWrapper>
+      ))}
   </S.Wrapper>
 )
 
