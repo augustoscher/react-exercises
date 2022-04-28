@@ -10,9 +10,9 @@ const Menu = ({ items }: MenuProps) => (
   <S.Wrapper>
     <S.List>
       {items.map((item, idx) => (
-        <li key={idx}>
+        <S.ListItem key={idx}>
           <MenuItem {...item} />
-        </li>
+        </S.ListItem>
       ))}
     </S.List>
   </S.Wrapper>
