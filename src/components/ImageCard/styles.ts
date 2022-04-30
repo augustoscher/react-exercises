@@ -10,7 +10,6 @@ export const Wrapper = styled.div`
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: auto;
-  resize: both;
 
   :hover {
     img {
