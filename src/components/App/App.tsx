@@ -34,8 +34,6 @@ function App() {
             ]}
           />
 
-          <hr />
-
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="fetch-hook" element={<FetchHook />} />
