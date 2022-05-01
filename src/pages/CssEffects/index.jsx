@@ -74,8 +74,6 @@ const CssEffectsPage = () => (
       tags={['styled components', 'css']}
     />
 
-    <hr />
-
     <h3>Resize ImageCard Grid</h3>
     <Grid>
       {items.map((item, idx) => (
