@@ -7,4 +7,6 @@ export const Wrapper = styled.div`
   grid-gap: 0.8rem;
   overflow: auto;
   resize: both;
+  border: 1px solid #888888;
+  border-radius: 0.2rem;
 `
