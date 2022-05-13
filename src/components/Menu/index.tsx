@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import MenuItem, { MenuItemProps } from '../MenuItem'
+import CollapseMenu from 'components/CollapseMenu'
 
 import * as S from './styles'
 
@@ -20,15 +21,13 @@ const Menu = ({ items }: MenuProps) => {
       <S.Nav>
         <S.NavContainer>
           <S.Logo href="/">ASHDIUAHDI</S.Logo>
-          <S.Menu isOpenMenu={isOpenMenu}>
-            <S.List>
-              {items.map((item, idx) => (
-                <S.ListItem key={idx}>
-                  <MenuItem {...item} />
-                </S.ListItem>
-              ))}
-            </S.List>
-          </S.Menu>
+          <S.List>
+            {items.map((item, idx) => (
+              <S.ListItem key={idx}>
+                <MenuItem {...item} />
+              </S.ListItem>
+            ))}
+          </S.List>
           <S.Container>
             <S.BurgerButton
               role="button"
@@ -42,6 +41,11 @@ const Menu = ({ items }: MenuProps) => {
           </S.Container>
         </S.NavContainer>
       </S.Nav>
+      <CollapseMenu
+        collapsed={isOpenMenu}
+        handleClick={handleClick}
+        links={items}
+      />
     </S.Wrapper>
   )
 }

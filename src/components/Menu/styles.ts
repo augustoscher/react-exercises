@@ -9,15 +9,12 @@ export const Nav = styled.nav`
     0 2px 8px hsla(0, 0%, 0%, 0.05);
   background-color: white;
   padding: 1.2rem 0;
-  justify-content: space-between;
-
-  ${media.greaterThan('medium')`
-    align-items: center;
-  `};
+  align-items: center;
 `
 
 export const NavContainer = styled.div`
   display: flex;
+  justify-content: space-between;
   width: 90%;
   margin: 0 auto;
 `
@@ -26,10 +23,7 @@ export const Container = styled.div`
   display: flex;
   width: 60px;
   padding: 0.4rem;
-
-  ${media.greaterThan('medium')`
-    align-items: center;
-  `};
+  justify-content: center;
 `
 
 export const Logo = styled.a`
@@ -42,32 +36,6 @@ export const Logo = styled.a`
   `};
 `
 
-type MenuProps = {
-  isOpenMenu: boolean
-}
-
-const menuModifiers = {
-  closed: () => css`
-    max-height: 0;
-    overflow: hidden;
-  `,
-  opened: () => css`
-    transform: translateY(5%);
-    transition: transform 0.5s ease-in-out;
-  `
-}
-
-export const Menu = styled.div<MenuProps>`
-  ${({ isOpenMenu }) => css`
-    display: flex;
-    width: 100%;
-
-    ${media.lessThan('medium')`
-      ${isOpenMenu ? menuModifiers.opened : menuModifiers.closed}
-    `};
-  `}
-`
-
 export const List = styled.ul`
   display: flex;
   flex-direction: row;
@@ -78,10 +46,8 @@ export const List = styled.ul`
   padding: 0;
 
   ${media.lessThan('medium')`
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0;
-  `};
+    display: none;
+  `}
 `
 
 export const ListItem = styled.li`
