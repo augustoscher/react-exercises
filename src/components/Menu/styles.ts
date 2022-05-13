@@ -82,10 +82,18 @@ type BurgerButtonProps = {
 
 const modifiers = {
   collapsed: () => css`
-    background: red;
+    /* background: red; */
   `,
   normal: () => css`
-    background: #0e2431;
+    /* & span:nth-child(1) {
+      transform: rotate(30deg);
+    } */
+    /* & span:nth-child(2) {
+      transform: scaleY(0);
+    } */
+    /* & span:nth-child(3) {
+      transform: rotate(-30deg);
+    } */
   `
 }
 
@@ -99,13 +107,29 @@ export const BurgerButton = styled.div<BurgerButtonProps>`
       justify-content: space-between;
       cursor: pointer;
 
-      span {
+      & span {
         display: block;
         height: 3px;
         width: 100%;
         border-radius: 10px;
-        ${menuOpened ? modifiers.normal : modifiers.collapsed}
+        background: black;
       }
+
+      /* & span:nth-child(1) {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+      } */
+
+      & span:nth-child(2) {
+        transition: transform 0.2s ease-in-out;
+      }
+
+      /* & span:nth-child(3) {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+      } */
+
+      ${menuOpened ? modifiers.normal : modifiers.collapsed}
     `}
   `}
 `
