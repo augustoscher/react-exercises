@@ -21,13 +21,13 @@ function App() {
         <Suspense fallback={<div>Loading...</div>}>
           <Menu
             items={[
-              { label: 'Fetch with hooks', path: 'fetch-hook' },
+              { label: 'Fetch', path: 'fetch-hook' },
               { label: 'Custom hook', path: 'custom-hook' },
-              { label: 'UseReducer hook', path: 'use-reducer-hook' },
-              { label: 'UseToggle hook', path: 'use-toggle-custom-hook' },
-              { label: 'UseRef hook', path: 'use-ref' },
-              { label: 'UseMemo hook', path: 'use-memo' },
-              { label: 'UseResize custom hook', path: 'use-resize' },
+              { label: 'UseReducer', path: 'use-reducer-hook' },
+              { label: 'UseToggle', path: 'use-toggle-custom-hook' },
+              { label: 'UseRef', path: 'use-ref' },
+              { label: 'UseMemo', path: 'use-memo' },
+              { label: 'UseResize', path: 'use-resize' },
               { label: 'React.memo()', path: 'react-memoization' },
               { label: 'React.lazy()', path: 'react-lazy' },
               { label: 'Css effects', path: 'css-effects' }
