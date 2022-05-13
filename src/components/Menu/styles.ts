@@ -8,7 +8,7 @@ export const Nav = styled.nav`
   box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.05), 0 1px 4px hsla(0, 0%, 0%, 0.05),
     0 2px 8px hsla(0, 0%, 0%, 0.05);
   background-color: white;
-  padding: 1.2rem;
+  padding: 1.2rem 0;
   justify-content: space-between;
 
   ${media.greaterThan('medium')`
@@ -16,8 +16,20 @@ export const Nav = styled.nav`
   `};
 `
 
+export const NavContainer = styled.div`
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+`
+
 export const Container = styled.div`
+  display: flex;
   width: 60px;
+  padding: 0.4rem;
+
+  ${media.greaterThan('medium')`
+    align-items: center;
+  `};
 `
 
 export const Logo = styled.a`
@@ -68,7 +80,7 @@ export const List = styled.ul`
   ${media.lessThan('medium')`
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 20px 0;
   `};
 `
 

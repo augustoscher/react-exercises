@@ -18,29 +18,29 @@ const Menu = ({ items }: MenuProps) => {
   return (
     <S.Wrapper>
       <S.Nav>
-        <S.Container>
-          <S.Logo href="/">Home</S.Logo>
-        </S.Container>
-        <S.Menu isOpenMenu={isOpenMenu}>
-          <S.List>
-            {items.map((item, idx) => (
-              <S.ListItem key={idx}>
-                <MenuItem {...item} />
-              </S.ListItem>
-            ))}
-          </S.List>
-        </S.Menu>
-        <S.Container>
-          <S.BurgerButton
-            role="button"
-            onClick={handleClick}
-            menuOpened={isOpenMenu}
-          >
-            <span className="line line1"></span>
-            <span className="line line2"></span>
-            <span className="line line3"></span>
-          </S.BurgerButton>
-        </S.Container>
+        <S.NavContainer>
+          <S.Logo href="/">ASHDIUAHDI</S.Logo>
+          <S.Menu isOpenMenu={isOpenMenu}>
+            <S.List>
+              {items.map((item, idx) => (
+                <S.ListItem key={idx}>
+                  <MenuItem {...item} />
+                </S.ListItem>
+              ))}
+            </S.List>
+          </S.Menu>
+          <S.Container>
+            <S.BurgerButton
+              role="button"
+              onClick={handleClick}
+              menuOpened={isOpenMenu}
+            >
+              <span className="line line1"></span>
+              <span className="line line2"></span>
+              <span className="line line3"></span>
+            </S.BurgerButton>
+          </S.Container>
+        </S.NavContainer>
       </S.Nav>
     </S.Wrapper>
   )
