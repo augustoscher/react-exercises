@@ -4,11 +4,14 @@ import * as S from './styles'
 export type MenuItemProps = {
   label: string
   path: string
+  handleClick?: () => void
 }
 
-const MenuItem = ({ label, path }: MenuItemProps) => (
+const MenuItem = ({ label, path, handleClick }: MenuItemProps) => (
   <S.Wrapper>
-    <Link to={path}>{label}</Link>
+    <Link to={path} onClick={handleClick}>
+      {label}
+    </Link>
   </S.Wrapper>
 )
 
