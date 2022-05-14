@@ -20,7 +20,7 @@ const Menu = ({ items }: MenuProps) => {
     <S.Wrapper>
       <S.Nav>
         <S.NavContainer>
-          <S.Logo href="/">ASHDIUAHDI</S.Logo>
+          <S.Logo href="/">HOME</S.Logo>
           <S.List>
             {items.map((item, idx) => (
               <S.ListItem key={idx}>
