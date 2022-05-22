@@ -12,7 +12,6 @@ const Menu = ({ items }: MenuProps) => {
   const [isOpenMenu, setOpenMenu] = useState(false)
 
   const handleClick = () => {
-    console.log('isOpenMenu: ', isOpenMenu)
     setOpenMenu(!isOpenMenu)
   }
 
