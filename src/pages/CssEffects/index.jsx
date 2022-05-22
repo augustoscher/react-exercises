@@ -2,6 +2,7 @@ import Base from 'templates/Base'
 import ExampleDescription from 'components/ExampleDescription'
 import ImageCard from 'components/ImageCard'
 import Grid from 'components/Grid'
+import CardsEffect from 'components/CardsEffect'
 
 const items = [
   {
@@ -72,6 +73,7 @@ const CssEffectsPage = () => (
       title="Css Effects"
       description="Some nice css effects with styled-components"
       tags={['styled components', 'css']}
+      links={['https://www.instagram.com/p/CdNvfexPWZd/']}
     />
 
     <h3>Resize ImageCard Grid</h3>
@@ -84,6 +86,13 @@ const CssEffectsPage = () => (
     {/* <hr /> */}
     {/* <h3>Grid</h3> */}
     {/* <Grid></Grid> */}
+    <h3>Box Card Hover Effect</h3>
+    <CardsEffect
+      cards={[
+        { title: 'title', content: 'content' },
+        { title: 'title2', content: 'content2' }
+      ]}
+    />
   </Base>
 )
 
