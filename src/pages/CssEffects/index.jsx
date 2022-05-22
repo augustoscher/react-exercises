@@ -2,7 +2,7 @@ import Base from 'templates/Base'
 import ExampleDescription from 'components/ExampleDescription'
 import ImageCard from 'components/ImageCard'
 import Grid from 'components/Grid'
-import CardsEffect from 'components/CardsEffect'
+import { FeaturedCardWrapper } from 'components/FeaturedCard'
 
 const items = [
   {
@@ -87,10 +87,16 @@ const CssEffectsPage = () => (
     {/* <h3>Grid</h3> */}
     {/* <Grid></Grid> */}
     <h3>Box Card Hover Effect</h3>
-    <CardsEffect
+    <FeaturedCardWrapper
       cards={[
         { title: 'title', content: 'content' },
-        { title: 'title2', content: 'content2' }
+        { title: 'title2', content: 'content2' },
+        { title: 'title3', content: 'content3' },
+        { title: 'title4', content: 'content4' },
+        { title: 'title', content: 'content' },
+        { title: 'title2', content: 'content2' },
+        { title: 'title3', content: 'content3' },
+        { title: 'title4', content: 'content4' }
       ]}
     />
   </Base>
