@@ -45,7 +45,7 @@ export const List = styled.ul`
   margin: 0;
   padding: 0;
 
-  ${media.lessThan('medium')`
+  ${media.lessThan('large')`
     display: none;
   `}
 `
@@ -65,7 +65,7 @@ const modifiers = {
 
 export const BurgerButton = styled.div<BurgerButtonProps>`
   ${({ menuOpened }) => css`
-    ${media.lessThan('medium')`
+    ${media.lessThan('large')`
       height: 20px;
       width: 32px;
       display: flex;

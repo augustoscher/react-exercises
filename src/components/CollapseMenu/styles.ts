@@ -8,7 +8,7 @@ export const CollapseWrapper = styled.div`
   right: 0;
   background: white;
 
-  ${media.greaterThan('medium')`
+  ${media.greaterThan('large')`
     display: none;
   `}
 `
