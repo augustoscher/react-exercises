@@ -19,8 +19,10 @@ export const FeaturedCardWrapper = ({ cards }: FeaturedCardWrapperProps) => (
 
 const FeaturedCard = ({ title, content }: FeaturedCardProps) => (
   <S.FeaturedCard>
-    <h4>{title}</h4>
-    <span>{content}</span>
+    <S.Link>
+      <strong>{title}</strong>
+      <span>{content}</span>
+    </S.Link>
   </S.FeaturedCard>
 )
 
