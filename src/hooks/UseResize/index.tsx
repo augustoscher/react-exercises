@@ -1,4 +1,3 @@
-import useMouse from 'hooks/UseMouse'
 import { useEffect, useState } from 'react'
 
 const useResize = (initialSize = {}) => {
