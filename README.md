@@ -4,8 +4,9 @@ Some usefull examples in React applications.
 
 - Typescript
 - Jest
-- Hooks
+- Hooks/Custom Hooks
 - React Testing Library
+- Styled Components
 
 ## Running
 
