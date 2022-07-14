@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 const Home = lazy(() => import('pages/Home'))
 const Menu = lazy(() => import('components/Menu'))
 const FetchHook = lazy(() => import('pages/FetchHook'))
+const DebounceHook = lazy(() => import('pages/DebounceHook'))
 const CustomHook = lazy(() => import('pages/CustomHook'))
 const ReducerHook = lazy(() => import('pages/ReducerHook'))
 const ToggleCustomHook = lazy(() => import('pages/ToggleCustomHook'))
@@ -22,6 +23,7 @@ function App() {
           <Menu
             items={[
               { label: 'Fetch', path: 'fetch-hook' },
+              { label: 'useDebounce', path: 'debounce-hook' },
               { label: 'Custom hook', path: 'custom-hook' },
               { label: 'UseReducer', path: 'use-reducer-hook' },
               { label: 'UseToggle', path: 'use-toggle-custom-hook' },
@@ -37,6 +39,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="fetch-hook" element={<FetchHook />} />
+            <Route path="debounce-hook" element={<DebounceHook />} />
             <Route path="custom-hook" element={<CustomHook />} />
             <Route path="use-reducer-hook" element={<ReducerHook />} />
             <Route
