@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 
 import * as S from './styles'
+import useDebounce from 'hooks/UseDebounce'
 
 type Item = {
   objectID: string
@@ -15,9 +16,11 @@ type Data = {
 
 const FetchItems = () => {
   const [items, setItems] = useState<Item[]>([])
-  const [query, setQuery] = useState('redux')
+  const [query, setQuery] = useState('')
   const [isLoading, setIsLoading] = useState(false)
   const [isError, setIsError] = useState(false)
+
+  const deb = useDebounce({ value: query, delay: 500 })
 
   useEffect(() => {
     const fetchData = async () => {
@@ -26,7 +29,7 @@ const FetchItems = () => {
 
       try {
         const { data } = await axios.get<Data>(
-          `https://hn.algolia.com/api/v1/search?query=${query}`
+          `https://hn.algolia.com/api/v1/search?query=${deb}`
         )
         setItems(data.hits)
       } catch (error) {
@@ -37,7 +40,7 @@ const FetchItems = () => {
     }
 
     fetchData()
-  }, [query])
+  }, [deb])
 
   return (
     <S.Wrapper>
