@@ -1,22 +1,30 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import useFetch from 'hooks/UseFetch'
-// import useDebounce from 'hooks/UseDebounce'
+import useDebounce from 'hooks/UseDebounce'
 import * as S from './styles'
+
+const BASE_URL = 'https://hn.algolia.com/api/v1/search?query='
 
 const SearchForm = () => {
   const [query, setQuery] = useState('redux')
   const { items, isLoading, isError, doFetch } = useFetch({
-    initialUrl: 'https://hn.algolia.com/api/v1/search?query=redux',
+    initialUrl: BASE_URL,
     initialData: []
   })
 
-  // TODO add useDebounce
+  const deb = useDebounce({ value: query, delay: 500 })
+
+  useEffect(() => {
+    doFetch(`${BASE_URL}${deb}`)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [deb])
+
   return (
     <S.Wrapper>
       <form
         onSubmit={(event) => {
-          doFetch(`http://hn.algolia.com/api/v1/search?query=${query}`)
+          doFetch(`${BASE_URL}${query}`)
           event.preventDefault()
         }}
       >
