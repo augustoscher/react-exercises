@@ -1,6 +1,7 @@
 import { useState } from 'react'
 
 import useFetch from 'hooks/UseFetch'
+// import useDebounce from 'hooks/UseDebounce'
 import * as S from './styles'
 
 const SearchForm = () => {
@@ -10,12 +11,12 @@ const SearchForm = () => {
     initialData: []
   })
 
+  // TODO add useDebounce
   return (
     <S.Wrapper>
       <form
         onSubmit={(event) => {
           doFetch(`http://hn.algolia.com/api/v1/search?query=${query}`)
-
           event.preventDefault()
         }}
       >
