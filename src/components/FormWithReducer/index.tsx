@@ -16,6 +16,10 @@ const FormWithReducer = () => {
     })
   }
 
+  const handleSubmit = () => {
+    console.log(state)
+  }
+
   return (
     <S.Wrapper>
       <S.FormWrapper>
@@ -47,6 +51,9 @@ const FormWithReducer = () => {
           checked={state.hasConsented}
           onChange={() => dispatch({ type: TOGGLE_CONSENT })}
         />
+        <button type="button" onClick={handleSubmit}>
+          Enviar
+        </button>
       </S.FormWrapper>
     </S.Wrapper>
   )
