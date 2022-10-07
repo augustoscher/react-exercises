@@ -8,6 +8,8 @@ Some usefull examples in React applications.
 - React Testing Library
 - Styled Components
 
+React exerciese is available on Vercel: https://react-exercises-7vz75l4is-augustoscher.vercel.app/
+
 ## Running
 
 In the project directory, you can run:
