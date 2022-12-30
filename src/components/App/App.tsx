@@ -14,6 +14,7 @@ const UseResizePage = lazy(() => import('pages/UseResize'))
 const ReactMemoExample = lazy(() => import('pages/ReactMemoExample'))
 const ReactLazyExample = lazy(() => import('pages/ReactLazyExample'))
 const CssEffectsPage = lazy(() => import('pages/CssEffects'))
+const UseContextPage = lazy(() => import('pages/UseContextHook'))
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
               { label: 'UseResize', path: 'use-resize' },
               { label: 'React.memo()', path: 'react-memoization' },
               { label: 'React.lazy()', path: 'react-lazy' },
-              { label: 'Css effects', path: 'css-effects' }
+              { label: 'Css effects', path: 'css-effects' },
+              { label: 'UseContext', path: 'use-context' }
             ]}
           />
 
@@ -52,6 +54,7 @@ function App() {
             <Route path="react-memoization" element={<ReactMemoExample />} />
             <Route path="react-lazy" element={<ReactLazyExample />} />
             <Route path="css-effects" element={<CssEffectsPage />} />
+            <Route path="use-context" element={<UseContextPage />} />
           </Routes>
         </Suspense>
       </BrowserRouter>
