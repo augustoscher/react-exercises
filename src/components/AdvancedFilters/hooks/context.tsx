@@ -12,9 +12,6 @@ import tasksReducer, {
   ActionProps
 } from './reducer'
 
-export const TasksContext = createContext(null)
-export const TasksDispatchContext = createContext(null)
-
 interface TaskContextProvider {
   children: ReactNode
 }
